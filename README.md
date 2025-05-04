@@ -48,3 +48,20 @@ Pay-As-You-Go            | <-tenantid-> | giovanni.nocco@genocs.com |
 # Tagging and pushing the images to Azure Container Registry (ACR)
 docker tag <repositoryname>/<imagename>:tag <acrname>.azurecr.io/<imagename>:tag
 ```
+
+
+
+## Mermaid Support
+
+```mermaid
+sequenceDiagram
+    participant dotcom
+    participant iframe
+    participant viewscreen
+    dotcom->>iframe: loads html w/ iframe url
+    iframe->>viewscreen: request template
+    viewscreen->>iframe: html & javascript
+    iframe->>dotcom: iframe ready
+    dotcom->>iframe: set mermaid data on iframe
+    iframe->>iframe: render mermaid
+```
